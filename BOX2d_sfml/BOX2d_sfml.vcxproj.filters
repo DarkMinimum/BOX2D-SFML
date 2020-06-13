@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\physics">
+      <UniqueIdentifier>{a3a09fc3-d19d-4072-9f74-8c7fa54c0d7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\levels">
+      <UniqueIdentifier>{aca8e371-d5dd-4434-aa82-7cae47040b12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\graphics">
+      <UniqueIdentifier>{2665915d-f734-4e3d-837f-26fc8318c127}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\entities">
+      <UniqueIdentifier>{f5b4d0b7-fdc7-4e92-a7a3-3441ab9d1d42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\entities">
+      <UniqueIdentifier>{8002a6f9-f2cd-48c1-bd58-e67ce42b0886}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\graphics">
+      <UniqueIdentifier>{8b0d29c5-8e94-4154-ae37-5b028cf0e2dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\physics">
+      <UniqueIdentifier>{012e910d-628a-4227-9ffa-2edde441ef0a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>Resource Files\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="NPC.cpp">
+      <Filter>Resource Files\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="projectaile.cpp">
+      <Filter>Resource Files\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="playerFinalObj.cpp">
+      <Filter>Resource Files\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="grObj.cpp">
+      <Filter>Resource Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="msgCloud.cpp">
+      <Filter>Resource Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="subs.cpp">
+      <Filter>Resource Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="backGroundParalax.cpp">
+      <Filter>Resource Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="phObj.cpp">
+      <Filter>Resource Files\physics</Filter>
+    </ClCompile>
+    <ClCompile Include="edgeObj.cpp">
+      <Filter>Resource Files\physics</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityBaseObj.cpp">
+      <Filter>Resource Files\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="phMainEntityConfig.cpp">
+      <Filter>Resource Files\physics</Filter>
+    </ClCompile>
+    <ClCompile Include="phStaticObj.cpp">
+      <Filter>Resource Files\physics</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="objClass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RayCastClosestCallback.h">
+      <Filter>Header Files\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="phObj.h">
+      <Filter>Header Files\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="phMainEntityConfig.h">
+      <Filter>Header Files\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="level0r.h">
+      <Filter>Header Files\levels</Filter>
+    </ClInclude>
+    <ClInclude Include="grObj.h">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="subs.h">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="backGroundParalax.h">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="msgCloud.h">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="phStaticObj.h">
+      <Filter>Header Files\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="bridgeObj.h">
+      <Filter>Header Files\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="edgeObj.h">
+      <Filter>Header Files\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityBaseObj.h">
+      <Filter>Header Files\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="NPC.h">
+      <Filter>Header Files\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>Header Files\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="playerFinalObj.h">
+      <Filter>Header Files\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="projectaile.h">
+      <Filter>Header Files\entities</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd">
+      <Filter>Header Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>
