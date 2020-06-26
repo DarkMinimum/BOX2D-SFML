@@ -44,56 +44,57 @@ void playerFinalObj::ZoomChange(float a)
 void playerFinalObj::interact(b2World& world, grObj& boySp, std::vector<NPC*>& vec)
 {
 
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::F) && vec.size())
-	{
-		if (!pressed2)
-		{
-			b2Vec2 point1 = getBody()->GetPosition();
-			b2Vec2 point2 = point1;
+	//if (sf::Keyboard::isKeyPressed(sf::Keyboard::F) && vec.size())
+	//{
+	//	if (!pressed2)
+	//	{
+	//		b2Vec2 point1 = getBody()->GetPosition();
+	//		b2Vec2 point2 = point1;
 
-			//get where is looking
-			int sign = 1;
-			this->getSprite()->objSprite().getScale().x > 0 ? sign = 1 : sign = -1;
-
-
-			point2.x += 10 * sign;
-
-			RayCastClosestCallback callback;
-			world.RayCast(&callback, point1, point2);
-
-			NPC* firstOne = NULL;
-			float distance = dis(getBody()->GetPosition().x, vec[0]->getBody()->GetPosition().x);
+	//		//get where is looking
+	//		int sign = 1;
+	//		this->getSprite()->objSprite().getScale().x > 0 ? sign = 1 : sign = -1;
 
 
-			//get closest NPC
-			for (int i = 0; i < vec.size(); ++i)
-			{
-				if (dis(phObj::getBody()->GetPosition().x, vec[i]->getBody()->GetPosition().x) <= distance)
-				{
-					//std::cout << dis(getBody()->GetPosition().x, vec[i]->getBody()->GetPosition().x) << std::endl;
-					firstOne = vec[i];
-				}
-			}
+	//		point2.x += 10 * sign;
+
+	//		RayCastClosestCallback callback;
+	//		world.RayCast(&callback, point1, point2);
+
+	//		NPC* firstOne = NULL;
+	//		
+	//		//float distance = dis(getBody()->GetPosition().x, vec[0]->getBody()->GetPosition().x);
+	//		//firstOne = vec[0];
+
+	//		//get closest NPC
+	//		for (int i = 0; i < vec.size(); ++i)
+	//		{
+	//			if (dis(phObj::getBody()->GetPosition().x, vec[i]->getBody()->GetPosition().x))
+	//			{
+	//				//std::cout << dis(getBody()->GetPosition().x, vec[i]->getBody()->GetPosition().x) << std::endl;
+	//				firstOne = vec[i];
+	//			}
+	//		}
 
 
-			if (firstOne != NULL)
-			{
+	//		if (firstOne != NULL)
+	//		{
 
-				if (callback.m_hit && (int)callback.fixtureToReturn->GetBody()->GetUserData() == 21)
-				{
-					isSpeaking = 1;
-					firstOne->getInteractFlag() == 0 ? firstOne->setInteractFlag(1) : firstOne->setWaiting();
-					grObj::objSprite().getScale().x > 0 ? boySp.setScale(-0.75, 0.75) : boySp.setScale(0.75, 0.75);
-					openCloud(boySp.getPosition(), boySp.getScaleX(), "Hi there, Bro!\nI'm friendly NPC!\nI'm waiting for ur AI\nI need friends...");
-					sound.play();
-				}
+	//			if (callback.m_hit && (int)callback.fixtureToReturn->GetBody()->GetUserData() == 21)
+	//			{
+	//				isSpeaking = 1;
+	//				firstOne->getInteractFlag() == 0 ? firstOne->setInteractFlag(1) : firstOne->setWaiting();
+	//				grObj::objSprite().getScale().x > 0 ? boySp.setScale(-0.75, 0.75) : boySp.setScale(0.75, 0.75);
+	//				openCloud(boySp.getPosition(), boySp.getScaleX(), "Hi there, Bro!\nI'm friendly NPC!\nI'm waiting for ur AI\nI need friends...");
+	//				sound.play();
+	//			}
 
-			}
+	//		}
 
-			pressed2 = 1;
-		}
-	}
-	else pressed2 = 0;
+	//		pressed2 = 1;
+	//	}
+	//}
+	//else pressed2 = 0;
 }
 
 void playerFinalObj::playAnimation(int i)

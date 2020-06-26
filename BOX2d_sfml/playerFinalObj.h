@@ -20,6 +20,7 @@ private:
 	sf::View view;
 	sf::Clock blClock, moveClock;
 	bool blood = 0;
+	bool isWin = 0;
 	bool yes, pressed2 = 0;
 
 	sf::Sound step, hurtSound, woodImp, sound;
